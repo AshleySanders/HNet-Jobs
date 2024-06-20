@@ -1,0 +1,50 @@
+Jobs data from H-Net
+====================
+
+This archive contains historical job postings from the H-Net
+Job Guide service selected to meet your request.  The structure
+of the data is as follows:
+
+1. Job posting records in CSV format
+
+	Filename is "jobdata.csv"
+
+	Fields are:
+	-----------
+
+	id					The job id number, an integer
+
+	department			The name of the posting department at a
+						larger institution
+
+	description			A position title
+
+	text				The full text of the posting
+
+	postdate			The date when the posting was published
+
+	institution			The name of the posting institution
+
+	type				The type of institution which offered the job
+
+	country				The country where the institution is located
+						(ISO A3 code)
+
+	state				The state or province where the institution is located
+						(US and Canada, postal abbreviation)
+
+	categories			One or more columns containing thematic categories
+						assigned to the job by the poster (some jobs
+						actually have no categories assigned)
+
+2. A listing of job id numbers in each category you requested
+
+	Filename is "<category>.dat"
+
+	This file contains one job id number per line
+
+3. A listing of all job id numbers that matched any of your categories
+
+	Filename is "alljobs.dat"
+
+	This file contains one job id number per line
